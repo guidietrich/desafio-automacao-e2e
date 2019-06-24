@@ -17,8 +17,8 @@ A gem `pry` foi utilizada para realizar o *debug* do código.
 
 Para agrupar os elementos conforme seu contexto, foi utilizado a orientação com `SitePrism::Section`. 
 
-Como a funcionalidade `acessar_login` é uma pré-condição para a funcionalidade `cadastrar_perfil` ser realizada, inclui todos os steps de `acessar_login` dentro de um bloco sendo chamado na sentença Dado de `cadastrar_perfil` em [`step_definitions`](features\step_definitions\automacao_e2e\acessar_login_steps.rb), função conhecida no Cucumber como Nested Steps.
-Utilizei o bloco `After` dentro do arquivo [`hooks`](features\support\hooks.rb) para fechar a sessão, pois quando o comando `cucumber` é invocado, o cenário `cadastrar_perfil` busca em tela os elementos provinientes do login. 
+Como a funcionalidade `acessar_login` é uma pré-condição para a funcionalidade `cadastrar_perfil` ser realizada, inclui todos os steps de `acessar_login` dentro de um bloco sendo chamado na sentença Dado de `cadastrar_perfil` em [`step_definitions`](features/step_definitions/automacao_e2e/acessar_login_steps.rb), função conhecida no Cucumber como Nested Steps.
+Utilizei o bloco `After` dentro do arquivo [`hooks`](features/support/hooks.rb) para fechar a sessão, pois quando o comando `cucumber` é invocado, o cenário `cadastrar_perfil` busca em tela os elementos provinientes do login. 
 
 Como boas práticas orientadas ao design de software, a implementação das classes e métodos foram baseados no princípio de Responsabilidade Única.
 
