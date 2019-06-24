@@ -12,7 +12,7 @@
 
 Foi adotado o padrão **Page Object Model** implementado com a gem `site_prism`. Para melhor organização do projeto, acrescentei a pasta `specs` que compõe as features utilizadas no projeto e a pasta `dataset`, contendo o arquivo `.yml` com a url especificada. Agrupei os subprojetos cada qual em sua pasta dentro de `pages`, `specs` e `step_definitions`.
 
-No arquivo `env.rb`, utilizei a gem `faker` para gerar massa aleatória e a gem `javascript` para executar comando javascript na inserção de cor e populá-los no método [`preencher_campos`](master\features\pages\automacao_e2e\cadastrar_perfil_section.rb), responsável pelo preenchimentos dos campos na criação de perfil/endereço.  
+No arquivo `env.rb`, utilizei a gem `faker` para gerar massa aleatória e a gem `javascript` para executar comando javascript na inserção de cor e populá-los no método [`preencher_campos`](features/pages/automacao_e2e/cadastrar_perfil_section.rb), responsável pelo preenchimentos dos campos na criação de perfil/endereço.  
 A gem `pry` foi utilizada para realizar o *debug* do código.
 
 Para agrupar os elementos conforme seu contexto, foi utilizado a orientação com `SitePrism::Section`. 
